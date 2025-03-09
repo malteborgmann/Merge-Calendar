@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+.rbc-calendar {
+  @apply font-sans bg-white text-gray-900;
+}
+
+.rbc-toolbar {
+  @apply mb-6 flex flex-wrap gap-2;
+}
+
+.rbc-toolbar button {
+  @apply px-4 py-2 bg-white text-gray-700 border border-gray-200 rounded-lg shadow-sm hover:bg-gray-50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.rbc-toolbar button.rbc-active {
+  @apply bg-blue-600 text-white border-blue-600 hover:bg-blue-700;
+}
+
+.rbc-event {
+  @apply rounded-lg shadow-sm;
+}
+
+.rbc-today {
+  @apply bg-blue-50;
+}
+
+.rbc-off-range-bg {
+  @apply bg-gray-50;
+}
+
+.rbc-header {
+  @apply py-3 font-semibold text-gray-700 border-b border-gray-200;
+}
+
+.rbc-time-view {
+  @apply border border-gray-200 rounded-lg overflow-hidden;
+}
+
+.rbc-time-header {
+  @apply border-gray-200;
+}
+
+.rbc-time-content {
+  @apply border-gray-200;
+}
+
+.rbc-day-bg + .rbc-day-bg {
+  @apply border-gray-200;
+}
+
+.rbc-month-row + .rbc-month-row {
+  @apply border-gray-200;
+}
+
+.rbc-time-slot {
+  @apply text-gray-500;
+}
+
+.rbc-event {
+  @apply px-2 py-1 rounded-lg;
+}
+
+.rbc-show-more {
+  @apply text-blue-600 hover:text-blue-700;
+}
+
+/* Dark mode overrides */
+.dark .rbc-calendar {
+  @apply bg-gray-800 text-gray-100;
+}
+
+.dark .rbc-toolbar button {
+  @apply bg-gray-700 text-gray-200 border-gray-600 hover:bg-gray-600;
+}
+
+.dark .rbc-toolbar button.rbc-active {
+  @apply bg-blue-600 text-white border-blue-600 hover:bg-blue-700;
+}
+
+.dark .rbc-today {
+  @apply bg-blue-900/20;
+}
+
+.dark .rbc-off-range-bg {
+  @apply bg-gray-800/50;
+}
+
+.dark .rbc-header {
+  @apply text-gray-200 border-gray-700;
+}
+
+.dark .rbc-time-view {
+  @apply border-gray-700;
+}
+
+.dark .rbc-time-header {
+  @apply border-gray-700;
+}
+
+.dark .rbc-time-content {
+  @apply border-gray-700;
+}
+
+.dark .rbc-day-bg + .rbc-day-bg {
+  @apply border-gray-700;
+}
+
+.dark .rbc-month-row + .rbc-month-row {
+  @apply border-gray-700;
+}
+
+.dark .rbc-time-slot {
+  @apply text-gray-400;
+}
+
+.dark .rbc-show-more {
+  @apply text-blue-400 hover:text-blue-300;
+}
